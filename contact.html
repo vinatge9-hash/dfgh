@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Niyantri Café</title>
+  <meta name="description" content="Get in touch with Niyantri Café in Nadargul, Telangana. Visit, reserve, or inquire about events." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { serif: ['Playfair Display','serif'], sans: ['Inter','ui-sans-serif'] } } } }
+  </script>
+</head>
+<body class="bg-white text-gray-800">
+  <div id="app" class="min-h-screen opacity-0 transition-opacity duration-700">
+    <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-40">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <a href="index.html" class="text-2xl font-semibold" style="font-family: 'Playfair Display', serif;">Niyantri Café</a>
+            <span class="ml-3 text-sm text-gray-600 hidden md:block">Contact</span>
+          </div>
+          <button id="nav-toggle2" class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+          <div id="mobile-menu2" class="hidden md:flex space-x-8 items-center"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="py-8" aria-label="Main content">
+      <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8" aria-labelledby="contact-header">
+        <h1 id="contact-header" class="text-3xl md:text-4xl font-semibold mb-4" style="font-family: 'Playfair Display', serif;">Get in touch</h1>
+        <p class="mb-6 text-gray-700">We'd love to hear from you. Visit our Nadargul location or reach out with your questions or event inquiries.</p>
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-4" action="#" method="post" autocomplete="off">
+          <input type="text" name="name" placeholder="Your name" class="px-3 py-2 rounded-md bg-white/80 border" required />
+          <input type="email" name="email" placeholder="Email" class="px-3 py-2 rounded-md bg-white/80 border" required />
+          <input type="tel" name="phone" placeholder="Phone" class="px-3 py-2 rounded-md bg-white/80 border" />
+          <input type="text" name="subject" placeholder="Subject" class="px-3 py-2 rounded-md bg-white/80 border" />
+          <textarea name="message" placeholder="Your message" rows="4" class="col-span-1 md:col-span-2 px-3 py-2 rounded-md bg-white/80 border" required></textarea>
+        </form>
+        <div class="mt-4 flex justify-end">
+          <button class="px-5 py-3 rounded-md bg-emerald-600 text-white hover:bg-emerald-700 transition">Send message</button>
+        </div>
+        <p class="text-sm text-gray-600 mt-4">Address: Nadargul, Telangana, India</p>
+      </section>
+    </main>
+
+    <footer class="bg-stone-800 text-gray-300 mt-12" aria-label="Footer">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="space-y-4">
+          <h3 class="text-xl font-semibold" style="font-family: 'Playfair Display', serif;">Niyantri Café</h3>
+          <p class="text-sm text-gray-300">Urban jungle cafe in Nadargul, connecting people with greenery and great coffee.</p>
+          <div class="flex space-x-3">
+            <a href="#" aria-label="Instagram" class="text-gray-300 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7z"/></svg></a>
+            <a href="#" aria-label="Facebook" class="text-gray-300 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M13 22v-8h3l1-4h-4V6c0-1.1.9-2 2-2h2V0h-2C9.8 0 6 3.8 6 9v5H2v4h4v8h7z"/></svg></a>
+            <a href="#" aria-label="X" class="text-gray-300 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23 2l-3.8 9.3L6.7 22 2 9.9 14.3 7.4 23 2z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-3" style="font-family: 'Playfair Display', serif;">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="about.html" class="hover:text-white">About Us</a></li>
+            <li><a href="#" class="hover:text-white">Menu</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-3" style="font-family: 'Playfair Display', serif;">Newsletter</h4>
+          <form class="flex flex-col sm:flex-row gap-2" action="#" method="post">
+            <label for="email3" class="sr-only">Email</label>
+            <input id="email3" name="email" type="email" placeholder="Your email" required class="w-full px-3 py-2 rounded-md bg-white/80 text-gray-800" />
+            <button type="submit" class="px-4 py-2 rounded-md bg-amber-500 text-white hover:bg-amber-600 transition">Subscribe</button>
+          </form>
+          <p class="text-xs text-gray-400 mt-2">No spam. Unsubscribe anytime.</p>
+        </div>
+      </div>
+      <hr class="border-gray-700 mx-auto w-11/12" />
+      <div class="text-center text-sm text-gray-400 py-4">&copy; 2025 Niyantri Café. All rights reserved.</div>
+    </footer>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const toggle = document.getElementById('nav-toggle2');
+      const m = document.getElementById('mobile-menu2');
+      if(toggle){ toggle.addEventListener('click', () => { m.classList.toggle('hidden'); }); }
+      const app = document.getElementById('app');
+      requestAnimationFrame(() => { app.classList.add('opacity-100'); });
+    });
+  </script>
+</body>
+</html>
