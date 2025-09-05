@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Niyantri Café</title>
+  <meta name="description" content="Learn about Niyantri Café, inspired by Urban Jungle Oasis. A warm, elegant alembic of biophilic design in Nadargul, Telangana." />
+  <!-- Fonts to load: Playfair Display (serif), Inter (sans) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display','serif'], sans: ['Inter','ui-sans-serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800">
+  <div id="app" class="min-h-screen opacity-0 transition-opacity duration-700">
+    <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-40">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <a href="index.html" class="text-2xl font-semibold" style="font-family: 'Playfair Display', serif;">Niyantri Café</a>
+            <span class="ml-3 text-sm text-gray-600 hidden md:block">About</span>
+          </div>
+          <button id="nav-toggle" class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+          <div id="mobile-menu" class="hidden md:flex space-x-8 items-center">
+            <a href="index.html" class="text-gray-700 hover:text-green-700">Home</a>
+            <a href="#section" class="text-gray-700 hover:text-green-700">Our Story</a>
+            <a href="contact.html" class="text-gray-700 hover:text-green-700">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="py-8" aria-label="Main content">
+      <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" id="section">
+        <h1 class="text-3xl md:text-4xl font-semibold mb-4" style="font-family: 'Playfair Display', serif;">About Niyantri Café</h1>
+        <p class="text-lg text-gray-700 mb-6">Niyantri Café draws inspiration from urban jungle aesthetics—combining biophilic design with a warm, elegant atmosphere. Our Nadargul location blends greenery, natural textures, and thoughtful detailing to create a serene daily sanctuary for guests, students, and remote workers alike.</p>
+        <p class="text-gray-700">Walls mix bright white with a moody botanical feature wall. A high ceiling hosts a living canopy of vines, while the coffee bar showcases emerald-tiled fronts and brass glass shelves. Expect lush seating, artisan ceramics, and a community bookshelf that invites you to linger.</p>
+      </section>
+    </main>
+
+    <footer class="bg-stone-800 text-gray-300 mt-12" aria-label="Footer">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="space-y-4">
+          <h3 class="text-xl font-semibold" style="font-family: 'Playfair Display', serif;">Niyantri Café</h3>
+          <p class="text-sm text-gray-300">A refined cafe experience in Nadargul, Telangana—where culture, coffee, and greenery mingle.</p>
+          <div class="flex space-x-3">
+            <a href="#" aria-label="Instagram" class="text-gray-300 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7z"/></svg></a>
+            <a href="#" aria-label="Facebook" class="text-gray-300 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M13 22v-8h3l1-4h-4V6c0-1.1.9-2 2-2h2V0h-2C9.8 0 6 3.8 6 9v5H2v4h4v8h7z"/></svg></a>
+            <a href="#" aria-label="X" class="text-gray-300 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23 2l-3.8 9.3L6.7 22 2 9.9 14.3 7.4 23 2z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-3" style="font-family: 'Playfair Display', serif;">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="about.html" class="hover:text-white">About Us</a></li>
+            <li><a href="#" class="hover:text-white">Menu</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-3" style="font-family: 'Playfair Display', serif;">Newsletter</h4>
+          <form class="flex flex-col sm:flex-row gap-2" action="#" method="post">
+            <label for="email2" class="sr-only">Email</label>
+            <input id="email2" name="email" type="email" placeholder="Your email" required class="w-full px-3 py-2 rounded-md bg-white/80 text-gray-800" />
+            <button type="submit" class="px-4 py-2 rounded-md bg-amber-500 text-white hover:bg-amber-600 transition">Subscribe</button>
+          </form>
+          <p class="text-xs text-gray-400 mt-2">No spam. Unsubscribe anytime.</p>
+        </div>
+      </div>
+      <hr class="border-gray-700 mx-auto w-11/12" />
+      <div class="text-center text-sm text-gray-400 py-4">&copy; 2025 Niyantri Café. All rights reserved.</div>
+    </footer>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const toggle = document.getElementById('nav-toggle');
+      const m = document.getElementById('mobile-menu');
+      if(toggle){ toggle.addEventListener('click', () => { m.classList.toggle('hidden'); }); }
+      const app = document.getElementById('app');
+      requestAnimationFrame(() => { app.classList.add('opacity-100'); });
+      // Scroll animations
+      const faders = document.querySelectorAll('[data-animate="fade"]');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){ entry.target.classList.remove('opacity-0','translate-y-6'); entry.target.classList.add('opacity-100','translate-y-0'); observer.unobserve(entry.target); }
+        });
+      }, {threshold: 0.2});
+      faders.forEach(el => { if(!el.classList.contains('opacity-0')) el.classList.add('opacity-0','translate-y-6'); observer.observe(el); });
+    });
+  </script>
+</body>
+</html>
